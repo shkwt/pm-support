@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://shkwt.github.io/VectaMediaLab/sitemap.xml
+Sitemap: https://shkwt.github.io/pm-support/sitemap.xml
