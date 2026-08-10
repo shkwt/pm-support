@@ -77,7 +77,9 @@ document.addEventListener("DOMContentLoaded", function () {
       // 健康診断セクションのボタン経由なら問い合わせ種別を切り替える(メール件名で区別できる)
       const inquiryType = document.getElementById("inquiry-type");
       if (inquiryType) {
-        inquiryType.value = link.closest("#checkup") ? "プロジェクト健康診断" : "通常の無料相談";
+        inquiryType.value =
+          link.dataset.inquiry ||
+          (link.closest("#checkup") ? "プロジェクト健康診断" : "通常の無料相談");
       }
       // アニメーションなしで即ジャンプ
       contact.scrollIntoView({ behavior: "auto", block: "start" });
