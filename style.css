@@ -41,6 +41,14 @@ body {
 }
 .reveal.is-visible { opacity: 1; transform: none; }
 
+/* FAQ・お問い合わせはスクロール連動のフェードインを使わず常時表示 */
+#faq .reveal,
+#contact .reveal {
+  opacity: 1;
+  transform: none;
+  transition: none;
+}
+
 /* =========================================================
    ボタン
 ========================================================= */
