@@ -1,9 +1,19 @@
 // スクロールに応じて要素をふわっと表示（要件定義書：スクロールアニメーション）
+// リロードのたびに再生されると煩わしいため、同一タブでは初回表示時のみ再生する
 document.addEventListener("DOMContentLoaded", function () {
   const targets = document.querySelectorAll(".reveal");
 
+  // 2回目以降の表示（リロード・ページ内遷移）ではアニメーションせず即表示
+  let alreadyPlayed = false;
+  try {
+    alreadyPlayed = sessionStorage.getItem("revealPlayed") === "1";
+    sessionStorage.setItem("revealPlayed", "1");
+  } catch (e) {
+    /* プライベートモード等でsessionStorageが使えない場合は毎回再生にフォールバック */
+  }
+
   // IntersectionObserver 非対応環境では全て表示しておく
-  if (!("IntersectionObserver" in window)) {
+  if (alreadyPlayed || !("IntersectionObserver" in window)) {
     targets.forEach((el) => el.classList.add("is-visible"));
     return;
   }
