@@ -182,7 +182,7 @@ body {
     linear-gradient(160deg, var(--navy) 0%, var(--navy-deep) 100%);
   color: #fff; padding: 90px 0; text-align: center;
 }
-.checkup__eyebrow { color: var(--sky); font-weight: 700; letter-spacing: .25em; font-size: .8rem; margin-bottom: 12px; }
+.checkup__eyebrow { color: var(--sky); font-weight: 700; letter-spacing: .25em; font-size: .8rem; text-align: center; margin-bottom: 36px; }
 .checkup__lead { color: #cbd5e1; }
 /* 健康診断とAIアシストPMOの2カラム（SPでは縦積み） */
 .checkup__grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: stretch; max-width: 1000px; margin: 0 auto; }
@@ -204,7 +204,7 @@ body {
 .checkup__price-label { font-size: .85rem; color: var(--sky); font-weight: 700; }
 .checkup__price-num { font-size: 3rem; font-weight: 900; color: #fff; line-height: 1.2; }
 .checkup__price-num small { font-size: 1rem; font-weight: 700; margin-left: 4px; }
-.checkup__note { color: #94a3b8; font-size: .85rem; margin-top: 24px; }
+.checkup__note { color: #94a3b8; font-size: .85rem; text-align: center; margin-top: 32px; }
 
 /* =========================================================
    選ばれる理由（REASONS）
