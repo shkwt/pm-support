@@ -202,6 +202,8 @@ body {
 .checkup__price-num { font-size: 3rem; font-weight: 900; color: #fff; line-height: 1.2; }
 .checkup__price-num small { font-size: 1rem; font-weight: 700; margin-left: 4px; }
 .checkup__note { color: #94a3b8; font-size: .85rem; margin-top: 24px; }
+/* 健康診断の直下に続く月額メニュー帯（境目が分かるよう色味を変える） */
+.checkup--alt { background: var(--navy-deep); border-top: 1px solid rgba(255,255,255,.08); }
 
 /* =========================================================
    選ばれる理由（REASONS）
