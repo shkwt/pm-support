@@ -188,6 +188,9 @@ body {
 .plan__price-num { font-size: 2.4rem; font-weight: 900; color: var(--navy); line-height: 1.2; }
 .plan__price-num small { font-size: .95rem; font-weight: 700; margin-left: 4px; }
 .trial__note { text-align: center; color: var(--muted); font-size: .85rem; margin-top: 20px; }
+/* 無料相談・健康診断・AIアシストPMOのボタンは最長文言(AIアシストPMOを相談する)に幅を揃える */
+#service .section__cta .btn,
+.plan__price .btn { min-width: 280px; text-align: center; }
 
 /* =========================================================
    選ばれる理由（REASONS）
