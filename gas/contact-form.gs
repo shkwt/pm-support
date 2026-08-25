@@ -75,7 +75,9 @@ function doPost(e) {
   var subjectLabel =
     inquiryType === "プロジェクト健康診断"
       ? "健康診断のご相談"
-      : "無料相談のお問い合わせ";
+      : inquiryType === "AIアシストPMOの構築"
+        ? "AIアシストPMOのご相談"
+        : "無料相談のお問い合わせ";
 
   MailApp.sendEmail({
     to: TO_ADDRESS,
