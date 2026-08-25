@@ -174,37 +174,20 @@ body {
 .card__link:hover { color: var(--blue-dark); }
 
 /* =========================================================
-   プロジェクト健康診断（入口商品）
+   プロジェクトマネジメント支援のトライアルプラン（サービス内）
 ========================================================= */
-.checkup {
-  background:
-    radial-gradient(900px 400px at 80% -20%, rgba(37,99,235,.35), transparent 60%),
-    linear-gradient(160deg, var(--navy) 0%, var(--navy-deep) 100%);
-  color: #fff; padding: 90px 0; text-align: center;
+.trial { margin-top: 64px; }
+.trial__title { text-align: center; font-size: 1.3rem; font-weight: 900; color: var(--navy); margin-bottom: 28px; }
+.plan { border-top: 3px solid var(--blue); }
+.plan .card__list--detail { margin-bottom: 18px; }
+.plan__price {
+  display: flex; flex-direction: column; align-items: center; gap: 8px;
+  border-top: 1px dashed var(--border); padding-top: 18px; margin-top: auto; text-align: center;
 }
-.checkup__eyebrow { color: var(--sky); font-weight: 700; letter-spacing: .25em; font-size: .8rem; text-align: center; margin-bottom: 36px; }
-.checkup__lead { color: #cbd5e1; }
-/* 健康診断とAIアシストPMOの2カラム（SPでは縦積み） */
-.checkup__grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: stretch; max-width: 1000px; margin: 0 auto; }
-.checkup__plan {
-  display: flex; flex-direction: column; gap: 18px;
-  background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.12);
-  border-radius: 16px; padding: 32px 28px; text-align: left;
-}
-.checkup__plan-title { font-size: 1.35rem; font-weight: 900; text-align: center; }
-.checkup__plan .checkup__lead { font-size: .92rem; }
-.checkup__points { list-style: none; flex: 1; }
-.checkup__points li { color: #cbd5e1; font-size: .92rem; line-height: 1.7; margin-bottom: 16px; }
-.checkup__points li:last-child { margin-bottom: 0; }
-.checkup__points li strong { display: block; color: #fff; font-size: 1rem; margin-bottom: 4px; }
-.checkup__price {
-  display: flex; flex-direction: column; align-items: center; gap: 10px;
-  border-top: 1px solid rgba(255,255,255,.15); padding-top: 20px; margin-top: auto; text-align: center;
-}
-.checkup__price-label { font-size: .85rem; color: var(--sky); font-weight: 700; }
-.checkup__price-num { font-size: 3rem; font-weight: 900; color: #fff; line-height: 1.2; }
-.checkup__price-num small { font-size: 1rem; font-weight: 700; margin-left: 4px; }
-.checkup__note { color: #94a3b8; font-size: .85rem; text-align: center; margin-top: 32px; }
+.plan__price-label { font-size: .85rem; color: var(--blue); font-weight: 700; }
+.plan__price-num { font-size: 2.4rem; font-weight: 900; color: var(--navy); line-height: 1.2; }
+.plan__price-num small { font-size: .95rem; font-weight: 700; margin-left: 4px; }
+.trial__note { text-align: center; color: var(--muted); font-size: .85rem; margin-top: 20px; }
 
 /* =========================================================
    選ばれる理由（REASONS）
@@ -367,6 +350,4 @@ body {
   .profile__dl { grid-template-columns: 1fr; gap: 2px 0; }
   .profile__dl dt { margin-top: 12px; }
   .cta-band__title, .problem__close { font-size: 1.4rem; }
-  .checkup__grid { grid-template-columns: 1fr; }
-  .checkup__plan { padding: 28px 24px; }
 }
