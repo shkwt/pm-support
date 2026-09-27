@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
 // お問い合わせフォーム送信（Google Apps Script 経由でGmailに通知）
 // GAS_URL には gas/contact-form.gs をデプロイして発行されるURLを貼り付ける
 document.addEventListener("DOMContentLoaded", function () {
-  const GAS_URL = "https://script.google.com/macros/s/AKfycbxLBVRBE077uh5eoqB3occ6MnzyCBG1y6BmLglZd7vNndqqex7lYhrfGZ8DcKU_gUG2/exec"; // 例: https://script.google.com/macros/s/XXXX/exec
+  const GAS_URL = "https://script.google.com/macros/s/AKfycbynm112cwIjV9tWc6pgq_TMmtCcIncsjbFNqHx5HQ8os21eqUVbBYS-VIwBPE2JB9po/exec"; // 例: https://script.google.com/macros/s/XXXX/exec
 
   const form = document.getElementById("contact-form");
   if (!form) return;
