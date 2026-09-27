@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://shkwt.github.io/pm-support/sitemap.xml
+Sitemap: https://rivmx.co.jp/sitemap.xml

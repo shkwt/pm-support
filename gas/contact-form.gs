@@ -24,7 +24,7 @@
  * （URLは変わりません）
  */
 
-var TO_ADDRESS = "kawatashohei0101@gmail.com";
+var TO_ADDRESS = "contact@rivmx.co.jp";
 
 function doPost(e) {
   var p = (e && e.parameter) || {};

@@ -76,6 +76,20 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+// ページ内リンク(#contact以外)はクリック時のみスムーススクロールする
+// ※CSSのscroll-behavior:smoothだと別ページからの遷移時にも自動スクロールが走るため、JSで限定的に行う
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll('a[href^="#"]:not([href="#contact"])').forEach((link) => {
+    link.addEventListener("click", function (e) {
+      const target = document.getElementById(link.getAttribute("href").slice(1));
+      if (!target) return;
+      e.preventDefault();
+      target.scrollIntoView({ behavior: "smooth", block: "start" });
+      history.replaceState(null, "", link.getAttribute("href"));
+    });
+  });
+});
+
 // 「無料相談する」ボタンを押したら、お問い合わせフォームへ即座に移動する
 document.addEventListener("DOMContentLoaded", function () {
   const contact = document.getElementById("contact");
@@ -87,11 +101,13 @@ document.addEventListener("DOMContentLoaded", function () {
       // 健康診断セクションのボタン経由なら問い合わせ種別を切り替える(メール件名で区別できる)
       const inquiryType = document.getElementById("inquiry-type");
       if (inquiryType) {
-        inquiryType.value = link.closest("#checkup")
-          ? "プロジェクト健康診断"
-          : link.closest("#ai-pmo")
-            ? "AIアシストPMOの構築"
-            : "通常の無料相談";
+        inquiryType.value =
+          link.dataset.inquiry ||
+          (link.closest("#checkup")
+            ? "プロジェクト健康診断"
+            : link.closest("#ai-pmo")
+              ? "AIアシストPMOの構築"
+              : "通常の無料相談");
       }
       // アニメーションなしで即ジャンプ
       contact.scrollIntoView({ behavior: "auto", block: "start" });

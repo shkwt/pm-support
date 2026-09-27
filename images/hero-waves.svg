@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <!-- Rivmxの"Riv"(river)をモチーフにした川の流れ。
+       #98c8efより少し明るい色から始まり、最下部が#98c8efで終わる4段の波 -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0d1f4c"/>
+      <stop offset="1" stop-color="#16295a"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+
+  <!-- 波1（最上段・いちばん明るい） -->
+  <path d="M -50 580 C 250 520, 520 660, 850 605 S 1400 525, 1650 595 L 1650 950 L -50 950 Z"
+        fill="#c4e1f8"/>
+  <!-- 波2 -->
+  <path d="M -50 665 C 280 600, 570 735, 900 680 S 1430 610, 1650 680 L 1650 950 L -50 950 Z"
+        fill="#b5d8f5"/>
+  <!-- 波3 -->
+  <path d="M -50 745 C 300 685, 620 810, 950 755 S 1460 690, 1650 760 L 1650 950 L -50 950 Z"
+        fill="#a6cff2"/>
+  <!-- 波4（最下段・#98c8efで終わる） -->
+  <path d="M -50 820 C 320 765, 660 880, 1000 825 S 1490 770, 1650 835 L 1650 950 L -50 950 Z"
+        fill="#98c8ef"/>
+</svg>

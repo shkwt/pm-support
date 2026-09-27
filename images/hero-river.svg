@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <!-- Rivmxオリジナルのヒーロー背景。
+       濃紺×金の世界観はそのままに、「Riv=川」を画面を斜めに横切る流れ（カレント）で表現。
+       右上から左下へ流れる曲線 = 川筋。中央はテキストのため静かに保つ。 -->
+  <defs>
+    <linearGradient id="ground" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0c1d45"/>
+      <stop offset="0.55" stop-color="#10265a"/>
+      <stop offset="1" stop-color="#0b1c42"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#c9a961" stop-opacity="0"/>
+      <stop offset="0.35" stop-color="#c9a961" stop-opacity="0.85"/>
+      <stop offset="0.7" stop-color="#c9a961" stop-opacity="0.4"/>
+      <stop offset="1" stop-color="#c9a961" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="brand" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#98c8ef" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#98c8ef" stop-opacity="0.6"/>
+      <stop offset="1" stop-color="#98c8ef" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#ground)"/>
+
+  <!-- 奥の流れ（幅広の半透明カレント。右上→左下） -->
+  <path d="M 1750 20 C 1320 220, 1160 420, 860 600 C 580 770, 300 840, -100 930"
+        fill="none" stroke="#4a6ba8" stroke-width="240" stroke-linecap="round" opacity="0.04"/>
+  <path d="M 1780 140 C 1380 320, 1220 500, 920 670 C 660 820, 380 880, -60 960"
+        fill="none" stroke="#2e4a85" stroke-width="150" stroke-linecap="round" opacity="0.06"/>
+
+  <!-- 川筋（金のライン。流れに沿って2本） -->
+  <path d="M 1750 60 C 1330 250, 1170 445, 870 625 C 590 790, 310 855, -90 945"
+        fill="none" stroke="url(#gold)" stroke-width="1.6"/>
+  <path d="M 1780 190 C 1400 360, 1240 530, 940 695 C 680 840, 400 895, -50 975"
+        fill="none" stroke="url(#gold)" stroke-width="1.1" opacity="0.7"/>
+
+  <!-- ブランドカラーの一筋（#98c8ef） -->
+  <path d="M 1760 120 C 1360 300, 1200 485, 900 660 C 630 815, 350 875, -70 955"
+        fill="none" stroke="url(#brand)" stroke-width="1.4"/>
+
+  <!-- 対角のコーナーアクセント（元デザインの「斜め」の名残を最小限に） -->
+  <path d="M -60 210 L 260 -60" stroke="#c9a961" stroke-width="1" opacity="0.35"/>
+  <path d="M -20 260 L 300 -20" stroke="#98c8ef" stroke-width="1" opacity="0.2"/>
+</svg>
