@@ -202,6 +202,23 @@ body {
 .trial { margin-top: 64px; }
 .trial__title { text-align: center; font-size: 1.3rem; font-weight: 900; color: var(--navy); margin-bottom: 28px; }
 .plan { border-top: 3px solid var(--accent); }
+/* 提供準備中のプラン（Coming Soon） */
+.plan--soon { position: relative; border-top-color: #cbd5e1; }
+.plan--soon .card__title,
+.plan--soon .card__text,
+.plan--soon .card__list--detail,
+.plan--soon .plan__price-label,
+.plan--soon .plan__price-num { opacity: .45; }
+.plan__badge {
+  position: absolute; top: 14px; right: 14px;
+  background: var(--muted); color: #fff;
+  font-size: .72rem; font-weight: 700; letter-spacing: .08em;
+  padding: 4px 12px; border-radius: 999px;
+}
+.btn--disabled {
+  background: #cbd5e1; color: #64748b;
+  cursor: not-allowed; pointer-events: none;
+}
 .plan .card__list--detail { margin-bottom: 18px; }
 .plan__price {
   display: flex; flex-direction: column; align-items: center; gap: 8px;
