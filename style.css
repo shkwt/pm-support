@@ -148,13 +148,11 @@ body {
   max-width: 860px; margin: 0 auto;
 }
 .problem-item {
-  position: relative; padding: 8px 0 8px 34px; font-weight: 500; color: var(--text);
+  position: relative; padding: 8px 0 8px 22px; font-weight: 500; color: var(--text);
 }
 .problem-item::before {
-  content: "!"; position: absolute; left: 2px; top: 13px;
-  width: 22px; height: 22px; border-radius: 50%;
-  background: var(--blue); color: #fff;
-  font-weight: 900; font-size: .9rem; line-height: 22px; text-align: center;
+  content: "・"; position: absolute; left: 0; top: 8px;
+  color: var(--blue); font-weight: 700;
 }
 .problem__close { text-align: center; font-size: 1.4rem; font-weight: 700; color: var(--navy); margin-top: 68px; }
 .problem__close strong { color: var(--blue); }
